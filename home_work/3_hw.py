@@ -6,7 +6,7 @@ print(max(15, 100))
 
 
 def add_2(a: int, b: int) -> str:
-    if a - b == 135:
+    if a - b == 135 or a - b == -135:
         result = 'Yes'
     else:
         result = 'No'
