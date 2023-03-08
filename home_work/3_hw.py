@@ -13,13 +13,11 @@ def add_2(a: int, b: int) -> str:
     return result
 
 
-print(add_2(135, 5))
+print(add_2(-140, -5))
 
 
 def add_3(a: int) -> str:
-    if a in range(1, 3):
-        sizon = 'Зима'
-    elif a == 12:
+    if a in range(1, 3) or a == 12:
         sizon = 'Зима'
     elif a in range(3, 6):
         sizon = 'Весна'
@@ -32,7 +30,7 @@ def add_3(a: int) -> str:
     return sizon
 
 
-print(add_3(3))
+print(add_3(12))
 
 
 def add_4(a: int, b: int, c: int) -> str:
