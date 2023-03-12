@@ -2,11 +2,11 @@ def add_1(a: int, b: int) -> int:
     return max(a, b)
 
 
-print(max(15, 100))
+print(add_1(15, 100))
 
 
 def add_2(a: int, b: int) -> str:
-    if a - b == 135 or a - b == -135:
+    if max(a, b) - min(a, b) == 135:
         result = 'Yes'
     else:
         result = 'No'
@@ -30,7 +30,7 @@ def add_3(a: int) -> str:
     return sizon
 
 
-print(add_3(12))
+print(add_3(9))
 
 
 def add_4(a: int, b: int, c: int) -> str:
@@ -41,22 +41,22 @@ def add_4(a: int, b: int, c: int) -> str:
     return result
 
 
-print(add_4(11, 11, 11))
+print(add_4(9, 15, 11))
 
 
 def add_5(a: list) -> int:
     result = 0
     for elem in a:
-        if elem >= 0:
+        if elem > 0:
             result += 1
     return result
 
 
-print(add_5((1, 2, -3, -4, -5)))
+print(add_5([1, 2, -3, -4, 5]))
 
 
 def add_6(years: int, months: int) -> int:
     return 29 * months + 29 * 12 * years
 
 
-print(add_6(6, 8))
+print(add_6(0, 8))
